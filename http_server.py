@@ -3,7 +3,6 @@ import socketserver
 from urllib.parse import urlparse, parse_qs
 import json
 from fibonacci import Fibonacci
-import traceback
 
 class RequestHandler(BaseHTTPRequestHandler):
 
