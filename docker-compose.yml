@@ -1,0 +1,11 @@
+version: "2"
+services:
+        redis:
+                image: redis
+                ports:
+                        - "6379:6379"
+        fibonacci:
+                image: alexander/fibonacci_secuence
+                command: python http_server.py
+                ports:
+                        - "80:8000"
